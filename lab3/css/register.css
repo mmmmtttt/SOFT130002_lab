@@ -1,0 +1,57 @@
+nav{
+    background-color: #f6f6f6;
+}
+
+a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+a:hover {color: #81a1bf;}
+
+body{
+    background-color: #f6f6f6;
+}
+
+header{
+    padding-left: 1250px;
+    background-color: #f6f6f6;
+}
+
+h1{
+    margin-left: 150px;
+    background-color: #f6f6f6;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form{
+    margin-left: 150px;
+    margin-right: 200px;
+    background-color: white;
+}
+
+p{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+checkbox{
+    padding-left:30px;
+}
+
+textarea{
+    padding: 30px;
+    width: 750px;
+}
+
+input[type="submit"]  {
+    padding-left: 10px;
+    padding-right:10px ;
+}
+
+div{
+    padding-left:20px ;
+}
+
+
