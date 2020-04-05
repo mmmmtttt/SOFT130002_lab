@@ -1,0 +1,12 @@
+.navbar-brand{
+    padding: 6px 6px;
+}
+
+.item{
+    height:650px;
+}
+
+.item img{
+    width: 100%;
+    display: block;
+}
