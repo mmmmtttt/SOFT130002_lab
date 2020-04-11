@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/browser.css" type="text/css">
+
+    <script language="JavaScript" type="text/javascript">
+        var city=[
+            ["Shanghai", "Kunming", "Beijing", "Yantai"],
+            ["Tokyo", "Osaka", "Kamakura"],
+            ["Roma", "Milan", "Venice", "Florence"],
+            ["New York", "San Francisco", "Washington"]
+        ];
+
+        function getCity(){
+            //获得省份下拉框的对象
+            var sltCountry=document.form1.country;
+            //获得城市下拉框的对象
+            var sltCity=document.form1.city;
+            //得到对应省份的城市数组
+            var countryCity=city[sltCountry.selectedIndex - 1];
+            //清空城市下拉框，仅留提示选项
+            sltCity.length=1;
+            //将城市数组中的值填充到城市下拉框中
+            for(var i=0;i<countryCity.length;i++){
+                sltCity[i+1]=new Option(countryCity[i],countryCity[i]);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="nav">
+    <ul id="menu">
+        <li><img src="../../img/material/icon.png" id="icon"></li>
+        <li class="horizontal"><a href="home.html">Home</a></li>
+        <li class="horizontal highlight"><a href="browser.html">Browser</a></li>
+        <li class="horizontal"><a href="search.html">Search</a></li>
+        <li id="floatright" class="horizontal"><a> My account ▼ </a>
+            <ul>
+                <li><a href="upload.html"><img src="../../img/material/upload.png">upload</a></li>
+                <li><a href="myPhoto.html"><img src="../../img/material/mine.png">my photo</a></li>
+                <li><a href="myCollection.html"><img src="../../img/material/favor.png">my favor</a></li>
+                <li><a href="../../index.html"><img src="../../img/material/login.png">login</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="wrapper">
+    <aside>
+        <form name="title_browser" method="post">
+            <header>Search by title</header>
+            <input type="search" placeholder="type title here">
+            <div onclick="alert('已搜索')"><input type="button" value="search"></div>
+        </form>
+
+        <div onclick="alert('已搜索')">
+            <header>hot countries</header>
+            <ul>
+                <li><a>China</a></li>
+                <li><a>America</a></li>
+                <li><a>Greek</a></li>
+                <li><a>Italy</a></li>
+                <li><a>Japan</a></li>
+            </ul>
+        </div>
+
+        <div onclick="alert('已搜索')">
+            <header>hot cities</header>
+            <ul>
+                <li><a>Shanghai</a></li>
+                <li><a>Beijing</a></li>
+                <li><a>Taiwan</a></li>
+                <li><a>New York</a></li>
+                <li><a>Washington</a></li>
+            </ul>
+        </div>
+
+        <div onclick="alert('已搜索')">
+            <header>hot content</header>
+            <ul>
+                <li><a>Scenery</a></li>
+                <li><a>City</a></li>
+                <li><a>People</a></li>
+                <li><a>Animal</a></li>
+                <li><a>Building</a></li>
+                <li><a>Wonder</a></li>
+            </ul>
+            <br>
+            <br>
+            <br>
+        </div>
+    </aside>
+
+    <div id="main">
+        <form method="post" action="" name="form1">
+            <select name="content">
+                <option>---content---</option>
+                <option>landscape</option>
+                <option>building</option>
+                <option>people</option>
+            </select>
+            <select name="country" onchange="getCity()">
+                <option VALUE="0">---country--- </option>
+                <option VALUE="1">China </option>
+                <option VALUE="2">Japan </option>
+                <option VALUE="3">Italy </option>
+                <option VALUE="4">America </option>
+            </select>
+            <select name="city">
+                <option value="0">---city--- </option>
+            </select>
+            <input type="submit" value="Filter" onclick="alert('已搜索')">
+        </form>
+
+        <div id="showcase">
+            <header>result</header>
+            <table>
+                <tr>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/1.jpg"></a></th>
+                    <th><a href="detail.html" ><img src="../../img/content/showcase_Browser/2.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/3.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/4.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/5.jpg"></a></th>
+                </tr>
+                <tr>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/6.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/7.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/8.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/9.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/10.jpg"></a></th>
+                </tr>
+                <tr>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/11.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/12.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/13.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/14.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/15.jpg"></a></th>
+                </tr>
+                <tr>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/16.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/17.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/18.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/19.jpg"></a></th>
+                    <th><a href="detail.html"><img src="../../img/content/showcase_Browser/20.jpg"></a></th>
+                </tr>
+            </table>
+
+        </div>
+        <div id="footer">
+            <span class="page_jump" onclick="alert('跳转至首页')"><img src="../../img/material/frontpage.png" width="10px" height="10px"></span>
+            <span class="page_jump" onclick="alert('跳转至第1页')">1</span>
+            <span class="page_jump" onclick="alert('跳转至第2页')">2</span>
+            <span class="page_jump" onclick="alert('跳转至第3页')">3</span>
+            <span class="page_jump" onclick="alert('跳转至第4页')">4</span>
+            <span class="page_jump" onclick="alert('跳转至第5页')">5</span>
+            <span class="page_jump" onclick="alert('跳转至尾页')"><img src="../../img/material/backpage.png" width="10px" height="10px"></span>
+        </div>
+    </div>
+</div>
+
+<footer>Copyright © 2020 Project1 Inc. All rights reserved.备案号：19302010064</footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*nav*/
+#menu, #menu ul {
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    background-color: #24292e;
+    margin-bottom: 10px;
+}
+
+#menu li ul li img{
+    vertical-align: middle;
+}
+
+.horizontal {
+    float: left;
+    background-color: #24292e;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu li ul {
+    position: absolute;
+    left: -999em;
+}
+
+#menu li:hover ul {
+    left: auto;
+}
+
+#nav #floatright {
+    float: right;
+}
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    padding: 1em 1em;
+}
+
+
+#menu a:hover {
+    color: gray;
+}
+
+#menu ul .highlight a {
+    color: #F0E68C;
+}
+
+#menu img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#menu #icon {
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding: 10px;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
+    flex-flow: row nowrap;
+}
+
+input {
+    outline: none;
+}
+
+#main {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    line-height: 30px;
+    clear: both;
+}
+
+#main header{
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+#main>div{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+}
+
+#flex img{
+    width:650px;
+    height:400px;
+    order:1;
+}
+
+#flex>div{
+    order:2;
+    margin-left:20px;
+    font-size:14px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    padding: 60px 30px;
+    border: none;
+    line-height: 40px;
+    height: 280px;
+}
+
+form input{
+    background-color: #DAA520;
+    border: none;
+    color:white;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius:10px;
+    display: inline-block;
+    font-size: 16px;
+    padding:5px 10px;
+    width:100px;
+    opacity:0.5;
+    margin-top: 40px;
+}
+
+#detail{
+    margin:30px 100px;
+    text-indent:40px;
+    font-size:13px;
+    color:gray;
+    text-align: justify-all;
+}
+
+footer {
+    color: darkgray;
+    font-size: 12px;
+    text-align: center;
+    margin: 20px;
+}
